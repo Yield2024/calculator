@@ -191,8 +191,8 @@ export default function Calculator() {
 						Yearly
 					</div>
 				</div>
-				<div className={styles.center_line_one}></div>
-				<div className={styles.center_info_details}>
+				{/*<div className={styles.center_line_one}></div>
+				 <div className={styles.center_info_details}>
 					<div className={styles.main_right_header_info_earned_number}>
 						${' '}
 						{new Intl.NumberFormat('en-US').format(
@@ -201,6 +201,7 @@ export default function Calculator() {
 					</div>
 					<div className={styles.main_right_header_info_earned_text}>Term</div>
 				</div>
+				*/}
 			</>
 		);
 	}
@@ -251,9 +252,9 @@ export default function Calculator() {
 								data={accountTypes}
 								searchable={false}
 								defaultValue={accTypes}
-								style={{ width: '100%', opacity: 0.9,	backgroundColor: 'transparent'
+								style={{ width: '100%', opacity: 0.9,
 							}}
-								className={styles.input_group}
+								className={styles.SelectPicker}
 								onChange={e => {
 									if (e === 'Orbit') {
 										setAccTypes(e);

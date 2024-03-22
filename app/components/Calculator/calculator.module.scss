@@ -94,7 +94,7 @@
 
 .rs-picker-select-menu-item.rs-picker-select-menu-item-active {
 	color: white;
-	background-color: transparent;
+	background-color: transparent !important;
 }
 
 .main_right_header_info_earned_number,
@@ -151,6 +151,13 @@
 	justify-content: space-between;
 	padding: 40px 0;
 }
+
+.main_left_form > div > SelectPicker {
+	width: 100%;
+	opacity: 0.9;
+	background: none;
+	background-color: transparent;
+  }
 
 .center_line_one {
 	width: 100%;
