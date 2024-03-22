@@ -92,6 +92,11 @@
 	margin-left: 45px;
 }
 
+.rs-picker-select-menu-item.rs-picker-select-menu-item-active {
+	color: white;
+	background-color: transparent;
+}
+
 .main_right_header_info_earned_number,
 .main_right_header_info_balance_number {
 	font-weight: bold;

@@ -251,7 +251,8 @@ export default function Calculator() {
 								data={accountTypes}
 								searchable={false}
 								defaultValue={accTypes}
-								style={{ width: '100%', opacity: 0.9 }}
+								style={{ width: '100%', opacity: 0.9,	backgroundColor: 'transparent'
+							}}
 								className={styles.input_group}
 								onChange={e => {
 									if (e === 'Orbit') {
