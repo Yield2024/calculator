@@ -1,4 +1,21 @@
 // @refresh reset
+/*  
+      <Header />
+      <HeaderAbout />
+      <Banking />
+      <Statistic />
+      <Spend />
+      <Paint />
+      <Inside />
+      <AccessInStyle />
+      <Wealth />
+      <Mortgage />
+      <Crypto />
+      <Community />
+      <MobileApp />
+      <Security />
+      <MoreInfo />
+      <Footer /> */
 import styles from "./page.module.scss";
 import Header from './components/Header/page'
 import HeaderAbout from './components/HeaderAbout/page'
@@ -16,26 +33,12 @@ import MobileApp from './components/MobileApp/page'
 import Security from './components/Security/page'
 import MoreInfo from './components/MoreInfo/page'
 import Footer from './components/Footer/page'
-
+import Calculator from "./components/Calculator/page";
 export default function Home() {
   return (
     <main className={styles.main}>
-      <Header />
-      <HeaderAbout />
-      <Banking />
-      <Statistic />
-      <Spend />
-      <Paint />
-      <Inside />
-      <AccessInStyle />
-      <Wealth />
-      <Mortgage />
-      <Crypto />
-      <Community />
-      <MobileApp />
-      <Security />
-      <MoreInfo />
-      <Footer />
+      
+      <Calculator />
     </main>
   );
 }
