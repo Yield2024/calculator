@@ -199,10 +199,13 @@ a {
 	background-color: transparent !important;
 }
 
-.calculator_main__xPXcy {
-    width: 380px !important;
-    max-width: 360px !important;
-}
+@media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+	.calculator_main__xPXcy {
+		width: 380px !important;
+		max-width: 360px !important;
+	}
+	
+  }
 
 .rs-picker-select-menu-item,
 .rs-input-group-addon,
