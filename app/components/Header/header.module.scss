@@ -1,0 +1,148 @@
+.header {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: white;
+}
+
+.nav {
+	width: 80%;
+	height: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 20px;
+	padding: 0 10px 0 20px;
+	position: static;
+	top: 0;
+	z-index: 10;
+	border-radius: 200px;
+	backdrop-filter: blur(10px);
+	background-image: linear-gradient(
+		127.43deg,
+		rgba(215, 237, 237, 0.08),
+		rgba(204, 235, 235, 0.08)
+	);
+
+	@media (max-width: 1150px) {
+		width: 90%;
+	}
+
+	@media (max-width: 1000px) {
+		> button {
+			display: none;
+		}
+	}
+}
+
+.header_title {
+	text-align: center;
+	letter-spacing: 0px;
+	font-size: 3.4rem;
+	font-weight: 400;
+	line-height: 43px;
+}
+
+.header_subtitle {
+	color: #00ffeb;
+	letter-spacing: 0;
+	margin-top: 40px;
+	font-weight: 400;
+	font-size: 25px;
+}
+
+.desktop_video {
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	object-fit: cover;
+
+	@media (max-width: 479px) {
+		display: none;
+	}
+}
+
+.links > a {
+	margin: 0 10px;
+}
+
+.links {
+	@media (max-width: 1000px) {
+		display: none;
+	}
+}
+
+.mobile_video {
+	display: none;
+
+	@media (max-width: 479px) {
+		display: block;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		z-index: 0;
+		object-fit: cover;
+	}
+}
+
+.header_details {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.burger {
+	display: none;
+
+	@media (max-width: 1000px) {
+		position: relative;
+		z-index: 1000;
+		display: flex;
+		width: 45px;
+		height: 45px;
+		border-radius: 50%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		flex-direction: column;
+		justify-content: center;
+		background-color: rgba(215, 237, 237, 0.08);
+		cursor: pointer;
+
+		> span {
+			display: block;
+			transition: all 0.3s;
+			height: 3px;
+			width: 25px;
+			background-color: white;
+			margin: 3px;
+			cursor: pointer;
+		}
+
+		
+	}
+}
+
+.first {
+	transform: translate(4px, 0px) rotate(45deg);
+	transform-origin: left top;
+}
+
+.second {
+	transform: scale(0);
+}
+
+.third {
+	transform: translate(-3px, -19px) rotate(-45deg);
+	transform-origin: right bottom;
+}

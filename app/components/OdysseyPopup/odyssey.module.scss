@@ -1,0 +1,102 @@
+.popup {
+	position: fixed;
+	z-index: 1000;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgba(0, 0, 0, 0.8);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.header_wrapper {
+	width: 90%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	font-weight: 800;
+}
+
+.header {
+	font-size: 30px;
+	margin: 30px;
+}
+
+.details {
+	width: 100%;
+    max-width: 900px;
+	text-align: center;
+	font-size: 18px;
+	margin-bottom: 50px;
+}
+
+.email {
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.form {
+	background: radial-gradient(
+			100.89% 754.65% at 100% 100%,
+			rgba(127, 86, 217, 0.2) 0%,
+			rgba(127, 86, 217, 0) 42%
+		),
+		radial-gradient(
+			95.69% 715.77% at 6% -34%,
+			rgba(127, 86, 217, 0.2) 9%,
+			rgba(127, 86, 217, 0) 30%
+		),
+		#0a0323;
+	border-radius: 18px;
+	width: 100%;
+    max-width: 600px;
+	padding: 20px;
+	margin-bottom: 30px;
+}
+
+.title {
+	margin: 10px 0;
+    font-size: 16px;
+}
+
+.odyssey_input {
+
+}
+
+.checkbox_wrapper {
+	display: flex;
+	margin: 10px 0;
+	align-items: self-start;
+
+	> input {
+		margin-right: 15px;
+	}
+
+	> p {
+
+	}
+}
+
+.error {
+	color: rgb(230, 35, 35);
+	margin-top: 5px;
+	margin-bottom: 0;
+}
+
+.empty {
+	width: 50px;
+}
+
+.close {
+	width: 50px;
+	height: 50px;
+	background-color: white;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
