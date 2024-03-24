@@ -243,7 +243,7 @@ export default function Calculator() {
 			<div className={styles.main}>
 				<div className={styles.main_left}>
 					<div className={styles.main_left_title}>
-						Long term depository account details
+						 Term depository account details
 					</div>
 					<form className={styles.main_left_form}>
 						<div>
