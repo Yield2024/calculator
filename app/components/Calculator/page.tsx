@@ -37,6 +37,21 @@ export default function Calculator() {
 		[]
 	);
 
+
+	const calcularTasaNominal = (tasaEfectiva: number, frecuenciaReinversion: number) => {
+		return ((Math.pow(1 + tasaEfectiva, 1 / frecuenciaReinversion) - 1) * frecuenciaReinversion) * 100;
+	}
+	
+	const calcularInteresCompuestoReinversion = ( P: number, n: number, tasaEfectiva: number) => {
+		// Calcular la tasa nominal
+		const tasaNominal = calcularTasaNominal(tasaEfectiva, 1);
+	
+		// Calcular el monto futuro
+		const montoFuturo = P * Math.pow(1 + tasaNominal / 100, n);
+	
+		return montoFuturo;
+	}
+	
 	const calcApy = () => {
 		const orbitTable: any = {
 			5: [5.5, 6, 7.5, 12],
@@ -66,6 +81,31 @@ export default function Calculator() {
 
 		return apyValue;
 	};
+
+	const calcApyAnual = () => {
+		const orbitTable: any = {
+			5: [5.5, 6, 7.5, 12],
+			7: [7, 7.5, 9, 13.5],
+			10: [7.5, 8, 9.5, 14],
+		};
+
+		const odysseyTable: any = {
+			5: [6.5, 7, 8.5, 13],
+			7: [7.5, 8, 9.5, 14],
+			10: [8.5, 9, 10.5, 15],
+		};
+
+		const selectedTable = accTypes === 'Orbit' ? orbitTable : odysseyTable;
+
+		let apyValue;
+
+		
+			apyValue = selectedTable[termState][2];
+	
+
+		return apyValue;
+	};
+
 
 	const calcEarned = () => {
 		const apy = calcApy();
@@ -238,6 +278,8 @@ export default function Calculator() {
 		return null;
 	}
 
+	
+
 	return (
 		<div className={styles.calculate}>
 			<div className={styles.main}>
@@ -400,7 +442,12 @@ export default function Calculator() {
 						<div className={styles.middle_line}></div>
 					</div>
 					<div className={styles.main_right_stats_wrapper}>
+						
 						<div className={styles.main_right_stats}>
+						<div
+								className={styles.main_right_header_info_earned_number}
+								
+							>{`Compounding Interest Option`}</div>
 							<ResponsiveContainer>
 								<LineChart width={500} height={225} data={dataPoints}>
 									{/* <XAxis dataKey={getXAxisDataKey()} />
@@ -433,6 +480,17 @@ export default function Calculator() {
 							</ResponsiveContainer>
 						</div>
 					</div>
+					
+					<div className={styles.main_right_header_info_earned}>
+					<div className={styles.main_right_header_info_earned_text}>
+					If all interest distributions are reinvested in the odyssey account for the entirety of the {termState} years period your compounded returns will equal	<br></br>						</div>
+							<div
+								className={styles.main_right_header_info_earned_number}
+								style={{ marginTop: '20px' }}
+								>{`$ ${new Intl.NumberFormat('en-US').format(
+								Number(calcularInteresCompuestoReinversion(parseFloat(deposit.replace(/,/g, '')), Number(parseFloat(termState.replace(/,/g, ''))), (calcApyAnual() / 100)).toFixed(0))
+							)}`}</div>
+						</div>
 					<div className={styles.middle}>
 						<div className={styles.middle_line}></div>
 					</div>
