@@ -132,7 +132,7 @@
 		flex-wrap: wrap;
 		margin-top: 50px;
 		width: 405px;
-		height: 225px;
+		height: 180px;
 	}
 
 	.main_right_stats_wrapper {
@@ -329,6 +329,10 @@
 		.main_right_header_info {
 			width: auto;
 			margin: 10px;
+			display: flex;
+			align-items: center;
+			flex-wrap: wrap;
+			flex-direction: column;
 		}
 
 		.main_right_header_info_earned {
@@ -338,5 +342,12 @@
 		.main_right_header_info_earned_number,
 		.main_right_header_info_balance_number {
 		font-size: 20px !important;
+		}
+		.main_right_stats{
+			margin-top: 0 !important;
+			height: 16vh !important;
+		}
+		.center_info {
+			padding:  0 !important;
 		}
 	}
