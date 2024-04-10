@@ -444,10 +444,7 @@ export default function Calculator() {
 					<div className={styles.main_right_stats_wrapper}>
 						
 						<div className={styles.main_right_stats}>
-						<div
-								className={styles.main_right_header_info_earned_number}
-								
-							>{`Compounding Interest Option`}</div>
+						
 							<ResponsiveContainer>
 								<LineChart width={500} height={225} data={dataPoints}>
 									{/* <XAxis dataKey={getXAxisDataKey()} />
@@ -480,10 +477,13 @@ export default function Calculator() {
 							</ResponsiveContainer>
 						</div>
 					</div>
-					
-					<div className={styles.main_right_header_info_earned}>
+					<div
+								className={styles.main_right_header_info_earned_number}
+								
+							>{`Compounding Interest Option`}</div>
+					<div className={styles.main_right_header_info_earned} 								style={{ marginTop: '20px' }}>
 					<div className={styles.main_right_header_info_earned_text}>
-					If all interest distributions are reinvested in the odyssey account for the entirety of the {termState} years period your compounded returns will equal	<br></br>						</div>
+					If all interest distributions are reinvested in the {accTypes} account for the entirety of the {termState} years period your compounded returns will equal	<br></br>						</div>
 							<div
 								className={styles.main_right_header_info_earned_number}
 								style={{ marginTop: '20px' }}
