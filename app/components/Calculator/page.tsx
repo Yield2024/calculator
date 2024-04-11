@@ -325,9 +325,9 @@
             return (
                 <div className={styles.custom_tooltip}>
                     <p className="label">{`${title} - ${(label || 0) + 1}`}</p>
-                     <p className="intro">{`Interest 2 - $${new Intl.NumberFormat("en-US").format(value2 - numericValue)}`}</p>
+                     <p className="intro">{`Compounding Interest  - $${new Intl.NumberFormat("en-US").format(value2 - numericValue)}`}</p>
                     <p className="desc">{`Total - $${new Intl.NumberFormat("en-US").format(value2)}`}</p>
-                    <p className="intro">{`Interest 1 - $${new Intl.NumberFormat("en-US").format(value - numericValue)}`}</p>
+                    <p className="intro">{`Simple Interest  - $${new Intl.NumberFormat("en-US").format(value - numericValue)}`}</p>
                     <p className="desc">{`Total - $${new Intl.NumberFormat("en-US").format(value)}`}</p>
                 
                 </div>
@@ -523,32 +523,14 @@
                 </div>
             </div>
             <div
-                className={styles.main_right_header_info_earned_number}
-            >{`Compounding Interest Option`}</div>
-            <div
                 className={styles.main_right_header_info_earned}
-                style={{ marginTop: "20px", marginBottom: "20px" }}
+                style={{ marginBottom: "20px" }}
             >
                 <div className={styles.main_right_header_info_earned_text}>
                 If all interest distributions are reinvested in the {accTypes}{" "}
                 account for the entirety of the {termState} years period your
                 compounded returns will equal <br></br>{" "}
                 </div>
-                <div
-                className={styles.main_right_header_info_earned_number}
-                style={{ marginTop: "20px" }}
-                >{`$ ${new Intl.NumberFormat("en-US").format(
-                Number(
-                    calcularInteresCompuestoReinversion(
-                    parseFloat(deposit.replace(/,/g, "")),
-                    Number(parseFloat(termState.replace(/,/g, ""))),
-                    calcApyAnual() / 100
-                    ).toFixed(0)
-                )
-                )}`}</div>
-            </div>
-            <div className={styles.middle}>
-                <div className={styles.middle_line}></div>
             </div>
             </div>
         </div>
