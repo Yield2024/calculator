@@ -491,15 +491,17 @@
                     <Line
                         type="monotone"
                         dataKey="value"
-                        stroke="#03feeb"
-                        fill="#03feeb"
+                        name="Interest 1"
+                        stroke="#ff7300"
+                        fill="#ff7300"
                         dot={{ r: 4, filter: "url(#glow)" }}
                     />
                     <Line
                         type="monotone"
                         dataKey="value2"
-                        stroke="#ff7300"
-                        fill="#ff7300"
+                        name="Interest 2"
+                        stroke="#03feeb"
+                        fill="#03feeb"
                         dot={{ r: 4, filter: "url(#glow)" }}
                     />
 
