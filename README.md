@@ -1,36 +1,34 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Compound Interest Calculator
 
-## Getting Started
+This is a compound interest calculator developed in React using the RSuite and Recharts libraries. The application calculates the earned interest and total accumulated balance for an investment account with different interest reinvestment options.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Calculates compound interest and total accumulated balance for an investment account.
+- Allows selection between two account types: Orbit and Odyssey.
+- Enables adjustment of the initial deposit amount and investment period.
+- Provides a graphical visualization of balance growth over time.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Screenshots
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+![alt text](image.png)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Installation
 
-## Learn More
+1. Clone this repository to your local machine.
+2. Navigate to the project folder.
+3. Run `npm install` to install the dependencies.
+4. Run `npm start` to start the application in development mode.
+5. Open [http://localhost:3000](http://localhost:3000) in your browser to view the application.
 
-To learn more about Next.js, take a look at the following resources:
+## Deployment
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The main version of this application is hosted on [Vercel](https://calculator-five-gilt.vercel.app/).
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Contributions
 
-## Deploy on Vercel
+Contributions are welcome. If you find a bug or have any ideas to improve the application, feel free to open an issue or send a pull request.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Author
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+This application was developed by [Carlos Escorcia](https://github.com/carlospolo019).
