@@ -1,34 +1,30 @@
-# Calculadora de Interés Compuesto
+# Compound Interest Calculator
 
-Esta es una calculadora de interés compuesto desarrollada en React utilizando las bibliotecas RSuite y Recharts. La aplicación calcula el interés ganado y el saldo total acumulado para una cuenta de inversión con diferentes opciones de reinversión de intereses.
+This is a compound interest calculator developed in React using the RSuite and Recharts libraries. The application calculates the earned interest and total accumulated balance for an investment account with different interest reinvestment options.
 
-## Funcionalidades
+## Features
 
-- Calcula el interés compuesto y el saldo total acumulado para una cuenta de inversión.
-- Permite seleccionar entre dos tipos de cuenta: Orbit y Odyssey.
-- Permite ajustar el monto del depósito inicial y el período de inversión.
-- Proporciona una visualización gráfica del crecimiento del saldo a lo largo del tiempo.
+- Calculates compound interest and total accumulated balance for an investment account.
+- Allows selection between two account types: Orbit and Odyssey.
+- Enables adjustment of the initial deposit amount and investment period.
+- Provides a graphical visualization of balance growth over time.
 
-## Capturas de Pantalla
+## Screenshots
 
 ![alt text](image.png)
 
-## Instalación
+## Installation
 
-1. Clona este repositorio en tu máquina local.
-2. Navega hasta la carpeta del proyecto.
-3. Ejecuta `npm install` para instalar las dependencias.
-4. Ejecuta `npm start` para iniciar la aplicación en modo de desarrollo.
-5. Abre [http://localhost:3000](http://localhost:3000) en tu navegador para ver la aplicación.
+1. Clone this repository to your local machine.
+2. Navigate to the project folder.
+3. Run `npm install` to install the dependencies.
+4. Run `npm start` to start the application in development mode.
+5. Open [http://localhost:3000](http://localhost:3000) in your browser to view the application.
 
-## Contribuciones
+## Contributions
 
-Las contribuciones son bienvenidas. Si encuentras un error o tienes alguna idea para mejorar la aplicación, no dudes en abrir un issue o enviar un pull request.
+Contributions are welcome. If you find a bug or have any ideas to improve the application, feel free to open an issue or send a pull request.
 
-## Autor
+## Author
 
-Esta aplicación fue desarrollada por [Carlos Escorcia](https://github.com/carlospolo019).
-
-## Licencia
-
-Este proyecto está bajo la Licencia [MIT](LICENSE).
+This application was developed by [Carlos Escorcia](https://github.com/carlospolo019).
