@@ -1,36 +1,34 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Calculadora de Interés Compuesto
 
-## Getting Started
+Esta es una calculadora de interés compuesto desarrollada en React utilizando las bibliotecas RSuite y Recharts. La aplicación calcula el interés ganado y el saldo total acumulado para una cuenta de inversión con diferentes opciones de reinversión de intereses.
 
-First, run the development server:
+## Funcionalidades
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Calcula el interés compuesto y el saldo total acumulado para una cuenta de inversión.
+- Permite seleccionar entre dos tipos de cuenta: Orbit y Odyssey.
+- Permite ajustar el monto del depósito inicial y el período de inversión.
+- Proporciona una visualización gráfica del crecimiento del saldo a lo largo del tiempo.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Capturas de Pantalla
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+![alt text](image.png)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Instalación
 
-## Learn More
+1. Clona este repositorio en tu máquina local.
+2. Navega hasta la carpeta del proyecto.
+3. Ejecuta `npm install` para instalar las dependencias.
+4. Ejecuta `npm start` para iniciar la aplicación en modo de desarrollo.
+5. Abre [http://localhost:3000](http://localhost:3000) en tu navegador para ver la aplicación.
 
-To learn more about Next.js, take a look at the following resources:
+## Contribuciones
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Las contribuciones son bienvenidas. Si encuentras un error o tienes alguna idea para mejorar la aplicación, no dudes en abrir un issue o enviar un pull request.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Autor
 
-## Deploy on Vercel
+Esta aplicación fue desarrollada por [Carlos Escorcia](https://github.com/carlospolo019).
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Licencia
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Este proyecto está bajo la Licencia [MIT](LICENSE).
