@@ -8,10 +8,10 @@ import "rsuite/InputNumber/styles/index.css";
 import "rsuite/Slider/styles/index.css";
 
 export default function Calculator() {
-    const [accTypes, setAccTypes] = useState("Orbit");
-    const [interestState, setInterestState] = useState("Monthly");
-    const [deposit, setDeposit] = useState("50,000");
-    const [termState, setTermState] = useState("5");
+    const [accTypes, setAccTypes] = useState("Odyssey");
+    const [interestState, setInterestState] = useState("Annually");
+    const [deposit, setDeposit] = useState("240,000");
+    const [termState, setTermState] = useState("10");
 
     const accountTypes = useMemo(
         () =>
@@ -310,7 +310,7 @@ export default function Calculator() {
                                     }
                                 }}
                                 onClean={() => {
-                                    setAccTypes("Orbit");
+                                    setAccTypes("Odyssey");
                                 }}
                             />
                         </div>
