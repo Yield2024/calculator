@@ -10,7 +10,7 @@ import "rsuite/Slider/styles/index.css";
 export default function Calculator() {
   const [accTypes, setAccTypes] = useState("Odyssey");
   const [interestState, setInterestState] = useState("Annually");
-  const [deposit, setDeposit] = useState("140,000");
+  const [deposit, setDeposit] = useState("240,000");
   const [termState, setTermState] = useState("10");
 
   const accountTypes = useMemo(
