@@ -463,7 +463,7 @@ export default function Calculator() {
                                         type="monotone"
                                         dataKey="value"
                                         stroke="white"
-                                        fill="white"
+                                        fill="#5BB7F1"
                                         dot={{ r: 4, filter: "url(#glow)" }}
                                     />
                                     <defs>
