@@ -462,8 +462,8 @@ export default function Calculator() {
                                     <Line
                                         type="monotone"
                                         dataKey="value"
-                                        stroke="#03feeb"
-                                        fill="#03feeb"
+                                        stroke="white"
+                                        fill="white"
                                         dot={{ r: 4, filter: "url(#glow)" }}
                                     />
                                     <defs>
@@ -509,9 +509,6 @@ export default function Calculator() {
                                 ).toFixed(0)
                             )
                         )}`}</div>
-                    </div>
-                    <div className={styles.middle}>
-                        <div className={styles.middle_line}></div>
                     </div>
                 </div>
             </div>
